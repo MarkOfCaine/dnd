@@ -1,0 +1,1239 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Homebrew",
+				"abbreviation": "necro",
+				"full": "Necromancer",
+				"authors": [
+					"Homebrew"
+				],
+				"convertedBy": [
+					"Kai"
+				],
+				"version": "2022.07.02",
+				"url": "https://www.gmbinder.com/share/-LE63w7F2ikQ4170d0Da"
+			}
+		],
+		"dateAdded": 1595709333,
+		"dateLastModified": 1605828976
+	},
+	"class": [
+		{
+			"name": "Necromancer",
+			"source": "BANAN",
+			"fluff": [
+				{
+					"name": "The Necromancer",
+					"type": "section",
+					"entries": [
+						"handsome Elf male in a white robe takes pause in the middle of a battle to survey the scene before him. Seeing a nearby footman losing ground to a bloodlusting Orc, he touches the corpse of a nearby Worg, which rises from the afterlife and lunges at the green beast",
+						"A Tiefling in black leather armor raises her sword to parry the wild swing of a cackling Gnoll. As her free hand grabs the creature’s unarmored wrist, it lets out a yelp as a green misty substance flows into the Tiefling’s palm and out of a cut on her forearm - a cut that slowly starts to close.",
+						"Seeing an Ogre’s giant club about to come down on him, a tired warrior closes his eyes and awaits death. A howl sounds, and the fighter opens his eyes: he sees the giant flailing around wildly, grasping its face. Standing behind it is a mischievous Gnome, grinning through his beard, holding an open tome.",
+						"No matter the approach to combat, necromancers seek to control life and death in all their forms. A natural knack for manipulating the life essences that flow in every living being is what drives each necromancer to commit their nefarious or honorable deeds.",
+						{
+							"name": "A search for the impossible",
+							"entries": [
+								"If there is one credo that rings true for even the most powerful, it is that all mortals must die - whether sooner or later. These sinister figures, however, prefer later over sooner: necromancers are those who have somehow learned to manipulate the essence of life itself. Through their techniques, they take it from those they deem undeserving, control it to their own liking, and sometimes even give it to those who could further their efforts. Most necromancers live their life in pursuit of immortality, whether for themselves or a loved one. Though they live by the credo of inescapable mortality, the ultimate goal that their skills are a means towards is often to beat that exact clock they know so well ticks for everyone."
+							],
+							"type": "section"
+						},
+						{
+							"name": "A Unique Talent",
+							"entries": [
+								"Contrary to popular belief, necromancers are not necessarily evil-doers, nor do all of them seek to subjugate others. In fact, some of them seek to use their powers for good: a poor understanding of their skills as well as their use of frightening undead monstrosities has simply led to a more generalized fear of their capacities. In reality, necromancers are a varied set of people. There is, however, one thing all of them have in common: each necromancer has some form of power over the vital essences that move any living creature - and they seek to use this to their advantage. Whether strayed wizards, aspiring acolytes or even blessed priests of gods of life, necromancers aim to achieve their goals by manipulating the very core of any creature's being."
+							],
+							"type": "section"
+						},
+						{
+							"name": "Creating a necromancer",
+							"entries": [
+								"In creating a necromancer, there is one important fact to consider: ‘how did you come into contact with necromancy, and why do you use it?'. Were you a young wizard who discovered their talent for manipulating life essence was more effective than blasting enemies with evocation spells? Did you grow up in a demon-worshipping cult that required the storing of life essence for satanic rituals? Or perhaps the source of your talent is unknown and mysterious? And what is the appeal of Necromancy to your character? Is it simply 'power over others', or did you perhaps lose a loved one to disease and felt the inability to prevent their death frustrating?",
+								{
+									"type": "inset",
+									"name": "Quick Build",
+									"entries": [
+										"You can make a necromancer quickly by following these suggestions. First, Wisdom should be your highest ability score. Make Intelligence your next-highest if you want to excel at spell casting and plan to take up the Creed of Tomes archetype. Choose Constitution instead if you plan to emphasize either the summoning of undead minions or the manipulation of health pools. Second, choose the Acolyte or Sage background. Third, choose the Chill Touch and Thaumaturgy cantrips."
+									]
+								}
+							],
+							"type": "section"
+						}
+					],
+					"source": "BANAN",
+					"page": 4
+				}
+			],
+			"hd": {
+				"number": 1,
+				"faces": 6
+			},
+			"proficiency": [
+				"int",
+				"wis"
+			],
+			"startingProficiencies": {
+				"weapons": [
+					"{@item dagger|phb|daggers}",
+					"{@item quarterstaff|phb|quarterstaffs}",
+					"{@item sickle|phb|sickles}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"deception",
+								"arcana",
+								"history",
+								"investigation",
+								"medicine",
+								"nature",
+								"religion"
+							],
+							"count": 2
+						}
+					}
+				],
+				"tools": [
+					"{@item alchemist's supplies|phb}",
+					"{@item herbalism kit|phb}",
+					"{@item scholar's pack|phb}"
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@item dagger|phb} or (b) a {@item sickle|phb}",
+					"(a) a {@item component pouch|phb}, (b) an {@item arcane focus|phb}, or (c) a {@item druidic focus|phb}",
+					"a set of {@item alchemist's supplies|phb}, an {@item herbalism kit|phb}, and a {@item scholar's pack|phb}"
+				],
+				"goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"dagger|phb"
+						],
+						"b": [
+							"sickle|phb"
+						]
+					},
+					{
+						"a": [
+							"component pouch|phb"
+						],
+						"b": [
+							"arcane focus|phb"
+						],
+						"c": [
+							"druidic focus|phb"
+						]
+					},
+					{
+						"_": [
+							"alchemist's supplies|phb",
+							"herbalism kit|phb",
+							"scholar's pack|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"int": 13
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"{@item dagger|phb|daggers}",
+						"{@item quarterstaff|phb|quarterstaffs}",
+						"{@item sickle|phb|sickles}"
+					],
+					"tools": [
+						"{@item alchemist's supplies|phb}",
+						"{@item herbalism kit|phb}",
+						"{@item scholar's pack|phb}"
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|class=Necromancer}",
+						"{@filter Spells Known|spells|class=Necromancer}"
+					],
+					"rows": [
+						[
+							3,
+							4
+						],
+						[
+							3,
+							5
+						],
+						[
+							3,
+							6
+						],
+						[
+							4,
+							7
+						],
+						[
+							4,
+							8
+						],
+						[
+							4,
+							9
+						],
+						[
+							4,
+							10
+						],
+						[
+							4,
+							11
+						],
+						[
+							4,
+							12
+						],
+						[
+							5,
+							13
+						],
+						[
+							5,
+							14
+						],
+						[
+							5,
+							15
+						],
+						[
+							5,
+							16
+						],
+						[
+							5,
+							17
+						],
+						[
+							5,
+							18
+						],
+						[
+							5,
+							19
+						],
+						[
+							5,
+							20
+						],
+						[
+							5,
+							21
+						],
+						[
+							5,
+							22
+						],
+						[
+							5,
+							23
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Necromancer}",
+						"{@filter 2nd|spells|level=2|class=Necromancer}",
+						"{@filter 3rd|spells|level=3|class=Necromancer}",
+						"{@filter 4th|spells|level=4|class=Necromancer}",
+						"{@filter 5th|spells|level=5|class=Necromancer}",
+						"{@filter 6th|spells|level=6|class=Necromancer}",
+						"{@filter 7th|spells|level=7|class=Necromancer}",
+						"{@filter 8th|spells|level=8|class=Necromancer}",
+						"{@filter 9th|spells|level=9|class=Necromancer}"
+					],
+					"rows": [
+						[
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							2,
+							1,
+							1
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Spellcasting|Necromancer|BANAN|1",
+				"Vitality Shift|Necromancer|BANAN|1",
+				{
+					"classFeature": "Necromantic Creed|Necromancer|BANAN|2",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Necromancer|BANAN|4",
+				{
+					"classFeature": "Necromantic Creed feature|Necromancer|BANAN|6",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Necromancer|BANAN|8",
+				{
+					"classFeature": "Necromantic Creed feature|Necromancer|BANAN|10",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Necromancer|BANAN|12",
+				{
+					"classFeature": "Necromantic Creed feature|Necromancer|BANAN|14",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Necromancer|BANAN|16",
+				"Eternal Youth|Necromancer|BANAN|18",
+				"Ability Score Improvement|Necromancer|BANAN|19",
+				{
+					"classFeature": "Necromantic Creed feature|Necromancer|BANAN|20",
+					"gainSubclassFeature": true
+				}
+			],
+			"classSpells": [
+				"abi-dalzim's horrid wilting|xge",
+				"Acid Splash",
+				"Alarm",
+				"Alter Self",
+				"Animal Friendship",
+				"Animal Messenger",
+				"Animal Shapes",
+				"Animate Objects",
+				"Antimagic Field",
+				"Antipathy/Sympathy",
+				"Arcane Eye",
+				"Astral Projection",
+				"Augury",
+				"Awaken",
+				"awaken machine spirit|walrockhomebrewcodexoftechnomancy",
+				"Banishment",
+				"Barkskin",
+				"beast bond|xge",
+				"Beast Sense",
+				"bigby's blistering barnacles|walrockhomebrewcodexofwaves",
+				"bones of the earth|xge",
+				"catapult|xge",
+				"catnap|xge",
+				"cause fear|xge",
+				"charm monster|xge",
+				"Charm Person",
+				"Chill Touch",
+				"Circle of Death",
+				"Clairvoyance",
+				"Command",
+				"Commune with Nature",
+				"Comprehend Languages",
+				"Compulsion",
+				"Confusion",
+				"Conjure Animals",
+				"Conjure Elemental",
+				"Conjure Fey",
+				"Conjure Minor Elementals",
+				"conjure trap|walrockhomebrewcodexoftechnomancy",
+				"Conjure Woodland Beings",
+				"Contact Other Plane",
+				"control flames|xge",
+				"Control Water",
+				"Control Weather",
+				"control winds|xge",
+				"Counterspell",
+				"create bonfire|xge",
+				"Create Food and Water",
+				"create homunculus|xge",
+				"Create or Destroy Water",
+				"Create Undead",
+				"Dancing Lights",
+				"deconstruct|walrockhomebrewcodexoftechnomancy",
+				"Detect Evil and Good",
+				"Detect Magic",
+				"Detect Poison and Disease",
+				"Detect Thoughts",
+				"Dispel Magic",
+				"distort value|ai",
+				"Dominate Beast",
+				"Dominate Monster",
+				"Dominate Person",
+				"dragon's breath|xge",
+				"Dream",
+				"Druidcraft",
+				"dust devil|xge",
+				"earth tremor|xge",
+				"earthbind|xge",
+				"Earthquake",
+				"enemies abound|xge",
+				"Enhance Ability",
+				"Enlarge/Reduce",
+				"Enthrall",
+				"Entangle",
+				"Erupting Earth",
+				"Etherealness",
+				"Eyebite",
+				"Fabricate",
+				"Faerie Fire",
+				"fast friends|ai",
+				"Fear",
+				"Feather Fall",
+				"Feeblemind",
+				"Feign Death",
+				"Find the Path",
+				"Finger of Death",
+				"Flesh to Stone",
+				"flowsight|walrockhomebrewcodexofwaves",
+				"Fog Cloud",
+				"Forcecage",
+				"Foresight",
+				"Freedom of Movement",
+				"Friends",
+				"frostbite|xge",
+				"galder's speedy courier|llk",
+				"Gaseous Form",
+				"Gate",
+				"Geas",
+				"Gentle Repose",
+				"Giant Insect",
+				"gift of gab|ai",
+				"Glyph of Warding",
+				"Goodberry",
+				"Grasping Vine",
+				"guardian of nature|xge",
+				"Guards and Wards",
+				"Guidance",
+				"gust|xge",
+				"Gust of Wind",
+				"Hallow",
+				"Hold Monster",
+				"Hold Person",
+				"ice knife|xge",
+				"Ice Storm",
+				"Identify",
+				"illusory dragon|xge",
+				"Illusory Script",
+				"Imprisonment",
+				"incite greed|ai",
+				"infestation|xge",
+				"investiture of flame|xge",
+				"investiture of ice|xge",
+				"investiture of stone|xge",
+				"investiture of wind|xge",
+				"Invisibility",
+				"Knock",
+				"Legend Lore",
+				"Leomund's Tiny Hut",
+				"life transference|xge",
+				"Locate Animals or Plants",
+				"Locate Creature",
+				"Locate Object",
+				"luck of the sea|walrockhomebrewcodexofwaves",
+				"maddening darkness|xge",
+				"Mage Armor",
+				"Mage Hand",
+				"Magic Circle",
+				"Magic Jar",
+				"Magic Mouth",
+				"magic stone|xge",
+				"mass polymorph|xge",
+				"Mass Suggestion",
+				"Meld into Stone",
+				"Melf's Acid Arrow",
+				"Mending",
+				"mental prison|xge",
+				"Message",
+				"Mind Blank",
+				"Minor Illusion",
+				"Mirage Arcane",
+				"Misty Step",
+				"Modify Memory",
+				"mold earth|xge",
+				"Moonbeam",
+				"mordenkainen's capable caravel|walrockhomebrewcodexofwaves",
+				"Move Earth",
+				"Nondetection",
+				"Nystul's Magic Aura",
+				"Otto's Irresistible Dance",
+				"Passwall",
+				"Phantom Steed",
+				"Planar Ally",
+				"Planar Binding",
+				"Plane Shift",
+				"Plant Growth",
+				"Poison Spray",
+				"Polymorph",
+				"Power Word Kill",
+				"power word pain|xge",
+				"Power Word Stun",
+				"Prestidigitation",
+				"primal savagery|xge",
+				"Produce Flame",
+				"Project Image",
+				"Protection from Evil and Good",
+				"Protection from Poison",
+				"psychic scream|xge",
+				"Purify Food and Drink",
+				"Ray of Enfeeblement",
+				"Ray of Frost",
+				"Ray of Sickness",
+				"Reincarnate",
+				"ripple|walrockhomebrewcodexofwaves",
+				"Scrying",
+				"See Invisibility",
+				"Sending",
+				"Sequester",
+				"Shapechange",
+				"Silence",
+				"Simulacrum",
+				"sink|walrockhomebrewcodexofwaves",
+				"skill empowerment|xge",
+				"skywrite|xge",
+				"Sleep",
+				"Sleet Storm",
+				"Slow",
+				"snare|xge",
+				"snilloc's snowball swarm|xge",
+				"soul cage|xge",
+				"Spare the Dying",
+				"Speak with Animals",
+				"Speak with Dead",
+				"Speak with Plants",
+				"Spider Climb",
+				"Spike Growth",
+				"Stinking Cloud",
+				"Stone Shape",
+				"Storm of Vengeance",
+				"Suggestion",
+				"Symbol",
+				"Telekinesis",
+				"Teleportation Circle",
+				"tiny servant|xge",
+				"Thaumaturgy",
+				"Thorn Whip",
+				"tidal wave|xge",
+				"toll the dead|xge",
+				"Tongues",
+				"Transmute Rock",
+				"Transport via Plants",
+				"Tree Stride",
+				"True Polymorph",
+				"True Seeing",
+				"Unseen Servant",
+				"urchin's spines|walrockhomebrewcodexofwaves",
+				"Vampiric Touch",
+				"Wall of Stone",
+				"Wall of Thorns",
+				"warding wind|xge",
+				"Water Breathing",
+				"Water Walk",
+				"Web",
+				"Weird",
+				"whirlwind|xge",
+				"Necromancer Bolt",
+				"wrath of nature|xge",
+				"Zone of Truth"
+			],
+			"subclassTitle": "Necromantic Creed",
+			"cantripProgression": [
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5
+			],
+			"spellsKnownProgression": [
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Spellcasting",
+			"source": "BANAN",
+			"page": 6,
+			"className": "Necromancer",
+			"classSource": "BANAN",
+			"level": 1,
+			"entries": [
+				"Whichever magical tradition you hail from, you have an innate talent for spellcraft. Some attribute this to birthright, others to practice, but only with training and dedication will it grow stronger. See {@book chapter 10|PHB|10} for the general rules of spellcasting. The {@filter Necromancer spell list|spells|class=Necromancer} is included here, at the end of this supplement.",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"At 1st level, you know three cantrips of your choice from the Necromancer spell list. You learn additional Necromancer cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Necromancer table."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spell Slots",
+					"entries": [
+						"The Necromancer table shows how many spell slots you have to cast your {@filter Necromancer spells|spells|class=Necromancer} of 1st level and higher. To cast one of these Necromancer spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+						"For example, if you know the 1st-level spell {@spell Necromancer bolt} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell Necromancer bolt} using either slot."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells Known of 1st Level and Higher",
+					"entries": [
+						"You know three 1st-level spells of your choice from the Necromancer spell list.",
+						"You learn an additional Necromancer spell of your choice at each level except 18th and 20th. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.",
+						"Additionally, when you gain a level in this class, you can choose one of the Necromancer spells you know and replace it with another spell from the Necromancer spell list, which also must be of a level for which you have spell slots."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Intelligence is your spellcasting ability for Necromancer spells, representing the deep study of natural arcana required for Necromancercraft. You use Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a Necromancer spell you cast and when making an attack roll with one.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ritual Casting",
+					"entries": [
+						"You also have a spellbook known as a ritual book. Your ritual book does not contain the Necromancer spells you know, which are instead fixed in your memory. Rather, the ritual book contains your choice of two 1st-level spells that have the ritual tag from the Necromancer spell list. The spells that are in your ritual book don't count against the number of spells you know. You can't cast the Necromancer spells in your ritual book except as rituals, unless you've learned them by some other means. You can also cast any Necromancer spell you know as a ritual if it has the ritual tag.",
+						{
+							"type": "entries",
+							"name": "Adding Ritual Spells",
+							"entries": [
+								"On your adventures, you can add other Necromancer ritual spells to your ritual book. When you find such a spell, you can add it to your ritual book if the spell's level is equal to or less than half your Necromancer level (rounded up) and if you can spare the time to transcribe the spell. For each level of the spell, the transcription process takes 2 hours and costs 50 gp for the rare inks needed to inscribe it."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Replacing the Book",
+							"entries": [
+								"You can copy a ritual spell from your ritual book into another book—for example, if you want to make a backup copy of your ritual book. This is just like copying a new ritual spell into your ritual book, but faster and easier, since you understand your own notation and already know how to cast the spell. You need spend only 1 hour and 10 gp for each level of the copied ritual spell.",
+								"If you lose your ritual book and do not have a replacement, you can instead attempt to replicate each ritual spell in the lost book, writing each spell in turn into a new book. This has the same cost in time and currency as duplicating a book, above, but after scribing a spell you must roll an Intelligence (Arcana) check with a DC of 8 + twice the ritual spell's level, to determine whether or not you have recalled it correctly. On a success, the ritual spell is added to your book, but on a failure the spell is incorrect and forgotten, and must be found again. To avoid this, most Necromanceres keep an extra ritual book hidden away in a secure location."
+							]
+						},
+						{
+							"type": "inset",
+							"name": "Optional Rule: Rituals While Leveling",
+							"entries": [
+								"If your DM does not want to include spells as potential loot items, they may consider allowing your Necromancer character to add ritual spells to your ritual book at certain character levels.",
+								"If your DM uses this optional rule, add one spell with the ritual tag to your ritual book at 3rd, 5th, 7th, 9th, and 11th level in the Necromancer class, instead of finding spells in the wider world."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"You can use an arcane focus or a druidic focus as a spellcasting focus for your Necromancer spells."
+					]
+				}
+			]
+		},
+		{
+			"name": "Vitality Shift",
+			"source": "BANAN",
+			"page": 7,
+			"className": "Necromancer",
+			"classSource": "BANAN",
+			"level": 1,
+			"entries": [
+				"All 1st level Necromancers have a certain control over the life forces that flow through each living being. As an action, you may touch a willing creature in order to either drain their vitality, or give them yours. You may take an amount of hit points of up to four times your Necromancer level and either remove it from your target's pool and add it to your own, or vice versa. Hit points transferred this way can not cause either pools to go beyond their maximum amount of hit points.",
+				"You can use this feature a number of times equal to your wisdom modifier (minimum of one charge). When you finish a long rest, you regain all expended uses."
+			]
+		},
+		{
+			"name": "Necromantic Creed",
+			"source": "BANAN",
+			"page": 9,
+			"className": "Necromancer",
+			"classSource": "BANAN",
+			"level": 2,
+			"entries": [
+				"Though the basic life-altering skills of each necromancer are at their core identical, practicioners of the skill improve upon it in their own way. This is done through adhering to a certain type of necromantic creed. Depending on the lands and areas a necromancer travels through, a creed can be anything ranging from an underground organization to personal, basic principles any one necromancer chooses to adhere to.",
+				{
+					"type": "inset",
+					"name": "Your Creed",
+					"entries": [
+						"At 2nd level, you choose one of three necromantic creeds to adhere to: the Creed of the Departed, the Creed of the Siphon, or the Creed of Tomes. These Creeds give you features at 2nd level and again at the 6th, 10th, 14th and 20th levels. Each creed is detailed at the end of the class description."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "BANAN",
+			"page": 5,
+			"className": "Necromancer",
+			"classSource": "BANAN",
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Necromantic Creed feature",
+			"source": "BANAN",
+			"page": 9,
+			"className": "Necromancer",
+			"classSource": "BANAN",
+			"level": 6,
+			"entries": [
+				"At 6th level, you gain a feature from your Necromantic Creed."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "BANAN",
+			"page": 5,
+			"className": "Necromancer",
+			"classSource": "BANAN",
+			"level": 8,
+			"entries": [
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Necromantic Creed feature",
+			"source": "BANAN",
+			"page": 9,
+			"className": "Necromancer",
+			"classSource": "BANAN",
+			"level": 10,
+			"entries": [
+				"At 10th level, you gain a feature from your Necromantic Creed."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "BANAN",
+			"page": 5,
+			"className": "Necromancer",
+			"classSource": "BANAN",
+			"level": 12,
+			"entries": [
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Necromantic Creed feature",
+			"source": "BANAN",
+			"page": 9,
+			"className": "Necromancer",
+			"classSource": "BANAN",
+			"level": 14,
+			"entries": [
+				"At 14th level, you gain a feature from your Necromantic Creed."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "BANAN",
+			"page": 5,
+			"className": "Necromancer",
+			"classSource": "BANAN",
+			"level": 16,
+			"entries": [
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Eternal Youth",
+			"source": "BANAN",
+			"page": 8,
+			"className": "Necromancer",
+			"classSource": "BANAN",
+			"level": 18,
+			"entries": [
+				"At 18th level, you have so much experience manipulating the essence of life that you are able to regain some of your childhood vigor. You become proficient in constitution saving throws, immune to poison and disease, and whenever you use your vitality shift feature, you can choose to also transfer an amount of years of age of up to your Necromancer level between yourself and the recipient."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "BANAN",
+			"page": 5,
+			"className": "Necromancer",
+			"classSource": "BANAN",
+			"level": 19,
+			"entries": [
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Necromantic Creed feature",
+			"source": "BANAN",
+			"page": 11,
+			"className": "Necromancer",
+			"classSource": "BANAN",
+			"level": 20,
+			"entries": [
+				"At 20th level, you gain a feature from your Necromantic Creed."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "The Creed of the Departed",
+			"source": "BANAN",
+			"page": 11,
+			"className": "Necromancer",
+			"classSource": "BANAN",
+			"subclassShortName": "Departed",
+			"subclassSource": "BANAN",
+			"level": 2,
+			"entries": [
+				"Though it is much more than just that, one phenomenon is most often associated with necromancy by the common folk: raising the dead. This field is exactly what the Creed of the Departed focuses on. Whether one undead Ogre or a horde of skeletons, those who join the ranks of this creed rely on the assistance of the lifeless to accomplish their goals. Necromancers within this Creed focus on improving their Undead Minions above all else. Since they usually pour some of their own lifeforce into the undead they create, they tend to be more frail and defenseless than other types of casters, relying instead on their creations to safeguard them.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Undead Minion|Necromancer|BANAN|Departed|BANAN|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conduit Walkers|Necromancer|BANAN|Departed|BANAN|2"
+				}
+			]
+		},
+		{
+			"name": "Departed Spells",
+			"entries": [
+				"You gain advanced tutelage into specific spells important to your coven. You learn each of the spells on the following list at the Necromancer level associated with them. These spells count as Necromancer spells for you and do not count against the total spells you can know.",
+				{
+					"caption": "Departed Spells",
+					"type": "table",
+					"colLabels": [
+						"Necromancer Level",
+						"Spells"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell bane|phb}, {@spell Tasha's hideous laughter|phb}"
+						],
+						[
+							"3rd",
+							"{@spell blindness/deafness|phb}, {@spell darkness|phb}"
+						],
+						[
+							"5th",
+							"{@spell animate dead|phb}, {@spell bestow curse|phb}"
+						],
+						[
+							"7th",
+							"{@spell blight|phb}, {@spell Evard's black tentacles|phb}"
+						],
+						[
+							"9th",
+							"{@spell contagion|phb}, {@spell insect plague|phb}"
+						]
+					]
+				}
+			],
+			"source": "BANAN",
+			"page": 11,
+			"className": "Necromancer",
+			"classSource": "BANAN",
+			"subclassShortName": "Departed",
+			"subclassSource": "BANAN",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Undead Minion",
+			"entries": [
+				"Starting at 2nd level, if you have at least one Necromancer hit die remaining, you can use an action to touch the corpse of any dead creature that is of one of the following types: aberration, beast, humanoid, monstrosity, plant, or undead. The creature can be no bigger than medium size, and its CR can be no higher than your Necromancer level. When doing so, you will attempt to raise it as an an Undead Minion. You expend a Necromancer hit die (roll and add your constitution modifier): the creature's current and maximum health becomes equal to the result plus twice your Necromancer level. Though the creature retains the proficiencies and any passive traits it had in life, it now counts as Undead and gains immunity to poison damage. Additionally, a newly created minion also takes the following penalties:",
+				"A creature cannot receive the same fortune twice. If you draw a card that the creature has previously chosen, reroll it or discard it and draw again. If it is impossible to draw three cards without turning up one which the creature has already selected, this ritual no longer works for that creature.",
+				" - It loses 4 points in each ability score (to a minimum of 1)",
+				" - It cannot cast spells, or use abilities that summon other creatures",
+				" - It loses any multi-attack ability it may have had",
+				" - If it had abilities with a limited amount of uses per day, each of these abilities can only be used once per day.",
+				" - It loses 10 feet of its walk, swim, and climbing speed (to a minimum of 5 feet).",
+				" - If the creature possesses a flying speed, it is halved, and cannot be used to ascend more than 5 feet off the ground",
+				"While the Undead Minion is within a 1 mile distance of you, you can telepathically give it orders that it will follow to the best of its ability. At will, you can command any Undead Minion under your control to return to you, even if it is further than 1 mile away from you. In combat, an Undead Minion takes turns on its own initiative, during which you can control it. It regards you and those not hostile to you as allies.",
+				"You only control the physical body of an Undead Minion: it retains the memory, personality and consciousness it had in life, but is forced to act as you command it to. While it can talk to you in a hostile manner, taunt you, and even lie to you, it is unable to thwart your plans directly by performing actions such as giving away your position to nearby enemies, revealing you to be a Necromancer to others, or leading you into a trap the Undead Minion itself is aware exists.",
+				"An Undead Minion that drops to 0 hit points instantly crumbles into dust. Otherwise, it lasts until the end of your next long rest, at which point you can choose to spend a number of hit dice equal to half the creature's CR (rounded down) to extend its lifespan until the end of your next long rest. Hit dice spent this way are lost, and no health is added to your minions' pool. If you are unable or unwilling to spend the required hit dice, your Undead Minion crumbles into dust. You cannot control more than one Undead Minion at a time: attempting to raise a second Undead Minion while already controlling one will cause the first one to crumble into dust. Additionally, at any moment, you can willingly decide to destroy your Undead Minion.",
+				"Finally, whenever you transfer hit points to an Undead Minion using the Vitality Shift feature, the amount of hit points the Undead Minion receives is doubled.",
+				"If a target corpse cannot be raised (due to effects such as the Gentle Repose spell), the hit die is lost and the ability fails, though you are made aware of the fact that the corpse cannot be raised. You may use this ability to revive beings that have been dead for an unlimited amount of time, but at the DM's discretion, additional restrictions may be imposed on the resulting Undead Minion if your target has been dead for longer than a week."
+			],
+			"source": "BANAN",
+			"page": 11,
+			"className": "Necromancer",
+			"classSource": "BANAN",
+			"subclassShortName": "Departed",
+			"subclassSource": "BANAN",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Conduit Walkers",
+			"entries": [
+				"Also starting at 2nd level, whenever you cast a spell with the range of touch, your Undead Minion can deliver the spell as if it had cast it. Your Undead Minion must be within 100 feet of you and within 5 feet of your target, and it must use its reaction and to deliver the spell when you cast it.",
+				"If your Undead Minion is not within 5 feet of your target, it may use its movement to get in range as part of the same reaction, though it may provoke attacks of opportunity while doing so. If the spell requires an attack roll, the Undead Minion uses one of its melee attack actions for the roll."
+			],
+			"source": "BANAN",
+			"page": 11,
+			"className": "Necromancer",
+			"classSource": "BANAN",
+			"subclassShortName": "Departed",
+			"subclassSource": "BANAN",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Shepherd's Resolve",
+			"source": "BANAN",
+			"page": 12,
+			"className": "Necromancer",
+			"classSource": "BANAN",
+			"subclassShortName": "Departed",
+			"subclassSource": "BANAN",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you improve your abilities to maintain your Undead Minions in a more solid condition. As such, when determining an Undead Minion's hit points upon raising it, you now expend two Necromancer hit dice, instead of one, adding both results to the Minion's health pool. However, you are no longer able to raise an Undead Minion if you only have one hit die remaining.",
+				"Additionally, your Undead Minions no longer take the 10 feet land, sea and climbing speed penalty."
+			]
+		},
+		{
+			"name": "Animator Style",
+			"source": "BANAN",
+			"page": 12,
+			"className": "Necromancer",
+			"classSource": "BANAN",
+			"subclassShortName": "Departed",
+			"subclassSource": "BANAN",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th level, you gain one of the following features of your choice:",
+				"::Adept Awakener::",
+				"Undead Minions raised by you may now make up to two attacks per turn, provided that the original creature had the ‘multiattack’ property. Additionally, your Undead Minions no longer take a penalty to their ability scores when you raise them. Finally, when determining an Undead Minion's hit points upon raising it, you may now choose to expend three hit dice instead of two.",
+				"::Giant Rouser::",
+				"You are now able to create Undead Minions out of corpses of large and huge-sized creatures, as well as out of creatures of the celestial, dragon, fey, fiend and giant types. Additionally, the maximum CR of creatures you can raise becomes equal to your Necromancer level plus your wisdom modifer. Finally, your Undead Minions can now ascend and descend freely while flying, though their original flight speed is still halved.",
+				"::Undead Magnate::",
+				"Your Undead Minions now last indefinitely and you can control a number of Undead Minions equal to your proficiency bonus before newer ones cause older ones to collapse, but you no longer add twice your Necromancer level to the result of the expended hit dice when determining a Undead Minion's hit points upon raising it. The Conduit Walkers feature may be used to deliver touch spells through any one of your Undead Minions."
+			]
+		},
+		{
+			"name": "Still Life",
+			"source": "BANAN",
+			"page": 12,
+			"className": "Necromancer",
+			"classSource": "BANAN",
+			"subclassShortName": "Departed",
+			"subclassSource": "BANAN",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"At 14th level, you become so adept at raising undead that you gain a certain amount of control over how they appear. When raising an Undead Minion or when casting the Animate Dead or Create Undead spells, you are able to dictate the looks of the creatures you create as if they were casting a Disguise Self spell on themselves. When a creature is disguised in this way, the changes made are permanent rather than being bound to a one hour duration."
+			]
+		},
+		{
+			"name": "Legendary Animator",
+			"source": "BANAN",
+			"page": 12,
+			"className": "Necromancer",
+			"classSource": "BANAN",
+			"subclassShortName": "Departed",
+			"subclassSource": "BANAN",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"At 20th level, you may pick an additional Animator Style from the Animator Style archetype feature."
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "The Creed of the Departed",
+			"shortName": "Departed",
+			"source": "BANAN",
+			"page": 11,
+			"subclassSpells": [
+				"bane",
+				"tasha's hideous laughter",
+				"blindness/deafness",
+				"darkness",
+				"animate dead",
+				"bestow curse",
+				"blight",
+				"evard's black tentacles",
+				"contagion",
+				"insect plague"
+			],
+			"subclassFeatures": [
+				"The Creed of the Departed|Necromancer|BANAN|Departed|BANAN|2",
+				"Shepherd's Resolve|Necromancer|BANAN|Departed|BANAN|6",
+				"Animator Style|Necromancer|BANAN|Departed|BANAN|10",
+				"Still Life|Necromancer|BANAN|Departed|BANAN|14",
+				"Legendary Animator|Necromancer|BANAN|Departed|BANAN|20"
+			],
+			"className": "Necromancer",
+			"classSource": "BANAN"
+		}
+	]
+}
